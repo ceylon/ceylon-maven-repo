@@ -25,9 +25,11 @@
     <module>com.redhat.ceylon.model</module>
     <module>com.redhat.ceylon.module-resolver</module>
     <module>com.redhat.ceylon.typechecker</module>
+    <module>ceylon.bootstrap</module>
     <module>ceylon.language</module>
     <module>ceylon.runtime</module>
-  </modules>
+    <module>system</module>
+</modules>
 
   <build>
     <pluginManagement>
