@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.ceylon-lang</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.2.0</version>
+  </parent>
+
+  <artifactId>ceylon.language</artifactId>
+  <version>1.2.0</version>
+
+  <name>ceylon.language</name>
+  <packaging>jar</packaging>
+
+  <properties>
+    <jarFile>/Users/julien/java/ceylon/ceylon-1.2.0/repo/ceylon/language/1.2.0/ceylon.language-1.2.0.car</jarFile>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jboss.modules</groupId>
+      <artifactId>jboss-modules</artifactId>
+      <version>1.3.3.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss</groupId>
+      <artifactId>jandex</artifactId>
+      <version>1.0.3.Final</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.coderplus.maven.plugins</groupId>
+        <artifactId>copy-rename-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

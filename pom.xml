@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
+  <groupId>org.ceylon-lang</groupId>
+  <artifactId>parent</artifactId>
+  <version>1.2.0</version>
+
+  <name>Ceylon lang - Parent</name>
+  <packaging>pom</packaging>
+
+  <modules>
+
+    <module>com.redhat.ceylon.common</module>
+    <module>com.redhat.ceylon.compiler.java</module>
+    <module>com.redhat.ceylon.maven-support</module>
+    <module>com.redhat.ceylon.model</module>
+    <module>com.redhat.ceylon.module-resolver</module>
+    <module>com.redhat.ceylon.typechecker</module>
+    <module>ceylon.language</module>
+    <module>ceylon.runtime</module>
+  </modules>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.coderplus.maven.plugins</groupId>
+          <artifactId>copy-rename-maven-plugin</artifactId>
+          <version>1.0.1</version>
+          <executions>
+            <execution>
+              <id>copy-jar</id>
+              <phase>package</phase>
+              <goals>
+                <goal>copy</goal>
+              </goals>
+              <configuration>
+                <sourceFile>${jarFile}</sourceFile>
+                <destinationFile>${project.build.directory}/${artifactId}-${version}.jar</destinationFile>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+</project>

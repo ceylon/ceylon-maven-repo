@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.ceylon-lang</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.2.0</version>
+  </parent>
+
+  <artifactId>com.redhat.ceylon.compiler.java</artifactId>
+  <version>1.2.0</version>
+
+  <name>com.redhat.ceylon.compiler.java</name>
+  <packaging>jar</packaging>
+
+  <properties>
+    <jarFile>/Users/julien/java/ceylon/ceylon-1.2.0/repo/com/redhat/ceylon/compiler/java/1.2.0/com.redhat.ceylon.compiler.java-1.2.0.jar</jarFile>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.github.rjeschke</groupId>
+      <artifactId>txtmark</artifactId>
+      <version>0.13</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.coderplus.maven.plugins</groupId>
+        <artifactId>copy-rename-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
