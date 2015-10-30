@@ -7,11 +7,11 @@
   <parent>
     <groupId>org.ceylon-lang</groupId>
     <artifactId>parent</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>system</artifactId>
-  <version>1.2.0</version>
+  <version>1.2.0-SNAPSHOT</version>
 
   <name>system</name>
   <packaging>pom</packaging>
@@ -20,47 +20,47 @@
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.common</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.compiler.java</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.maven-support</artifactId>
-      <version>2.0</version>
+      <version>2.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.model</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.module-resolver</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.typechecker</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>ceylon.language</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>ceylon.runtime</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>ceylon.bootstrap</artifactId>
-      <version>1.2.0</version>
+      <version>1.2.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
