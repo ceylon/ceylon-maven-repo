@@ -17,8 +17,11 @@
   <name>Ceylon lang - Parent</name>
   <packaging>pom</packaging>
 
-  <modules>
+  <properties>
+    <ceylon.home>/Users/julien/java/ceylon/ceylon-1.2.0</ceylon.home>
+  </properties>
 
+  <modules>
     <module>com.redhat.ceylon.common</module>
     <module>com.redhat.ceylon.compiler.java</module>
     <module>com.redhat.ceylon.maven-support</module>

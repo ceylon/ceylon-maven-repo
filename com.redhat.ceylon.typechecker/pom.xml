@@ -17,7 +17,7 @@
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>/Users/julien/java/ceylon/ceylon-1.2.0/repo/com/redhat/ceylon/typechecker/1.2.0/com.redhat.ceylon.typechecker-1.2.0.jar</jarFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/typechecker/1.2.0/com.redhat.ceylon.typechecker-1.2.0.jar</jarFile>
   </properties>
 
   <dependencies>
