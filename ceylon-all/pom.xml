@@ -58,41 +58,4 @@
     </dependency>
   </dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>2.4.2</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-            <configuration>
-              <createDependencyReducedPom>false</createDependencyReducedPom>
-              <artifactSet>
-                <includes>
-                  <include>org.ceylon-lang:*</include>
-                  <include>com.github.lookfirst:sardine</include>
-                  <include>com.github.rjeschke:txtmark</include>
-                  <include>net.minidev:json-smart</include>
-                  <include>antlr:antlr</include>
-                  <include>org.antlr:antlr-runtime</include>
-                  <include>org.antlr:stringtemplate</include>
-                  <include>commons-codec:commons-codec</include>
-                  <include>commons-logging:commons-logging</include>
-                  <include>org.apache.httpcomponents:httpcore</include>
-                  <include>org.apache.httpcomponents:httpclient</include>
-                  <include>org.jboss.modules:jboss-modules</include>
-                  <include>org.jboss:jandex</include>
-                  <include>org.tautua.markdownpapers:markdownpapers-core</include>
-                </includes>
-              </artifactSet>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
-
 </project>
