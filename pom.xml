@@ -32,6 +32,8 @@
     <module>ceylon.language</module>
     <module>ceylon.runtime</module>
     <module>system</module>
+    <module>ceylon-all</module>
+    <module>ceylon-complete</module>
 </modules>
 
   <build>
