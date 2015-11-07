@@ -18,6 +18,7 @@
 
   <properties>
     <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/1.2.0/com.redhat.ceylon.module-resolver-1.2.0.jar</jarFile>
+    <sourceFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/1.2.0/com.redhat.ceylon.module-resolver-1.2.0.src</sourceFile>
   </properties>
 
   <dependencies>
@@ -53,6 +54,10 @@
       <plugin>
         <groupId>com.coderplus.maven.plugins</groupId>
         <artifactId>copy-rename-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>

@@ -18,6 +18,7 @@
 
   <properties>
     <jarFile>${ceylon.home}/repo/ceylon/language/1.2.0/ceylon.language-1.2.0.car</jarFile>
+    <sourceFile>${ceylon.home}/repo/ceylon/language/1.2.0/ceylon.language-1.2.0.src</sourceFile>
   </properties>
 
   <dependencies>
@@ -38,6 +39,10 @@
       <plugin>
         <groupId>com.coderplus.maven.plugins</groupId>
         <artifactId>copy-rename-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
