@@ -1,3 +1,21 @@
 [submodule "com.redhat.ceylon.compiler.java/project"]
 	path = com.redhat.ceylon.compiler.java/project
 	url = https://github.com/ceylon/ceylon-compiler.git
+[submodule "com.redhat.ceylon.common/project"]
+	path = com.redhat.ceylon.common/project
+	url = https://github.com/ceylon/ceylon-common.git
+[submodule "com.redhat.ceylon.model/ceylon-model"]
+	path = com.redhat.ceylon.model/ceylon-model
+	url = https://github.com/ceylon/ceylon-model.git
+[submodule "com.redhat.ceylon.model/project"]
+	path = com.redhat.ceylon.model/project
+	url = https://github.com/ceylon/ceylon-model.git
+[submodule "com.redhat.ceylon.module-resolver/project"]
+	path = com.redhat.ceylon.module-resolver/project
+	url = https://github.com/ceylon/ceylon-module-resolver.git
+[submodule "ceylon.runtime/project"]
+	path = ceylon.runtime/project
+	url = https://github.com/ceylon/ceylon-runtime.git
+[submodule "com.redhat.ceylon.typechecker/project"]
+	path = com.redhat.ceylon.typechecker/project
+	url = https://github.com/ceylon/ceylon-spec.git

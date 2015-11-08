@@ -80,6 +80,25 @@
             </execution>
           </executions>
         </plugin>
+        <plugin>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>2.6</version>
+          <executions>
+            <execution>
+              <id>package-sources</id>
+              <goals>
+                <goal>single</goal>
+              </goals>
+              <phase>package</phase>
+              <configuration>
+                <descriptors>
+                  <descriptor>${assemblyFile}</descriptor>
+                </descriptors>
+                <attach>true</attach>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>

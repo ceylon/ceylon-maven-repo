@@ -18,6 +18,7 @@
 
   <properties>
     <jarFile>${ceylon.home}/repo/ceylon/runtime/1.2.0/ceylon.runtime-1.2.0.jar</jarFile>
+    <assemblyFile>${project.basedir}/sources.xml</assemblyFile>
   </properties>
 
   <dependencies>
@@ -38,6 +39,14 @@
       <plugin>
         <groupId>com.coderplus.maven.plugins</groupId>
         <artifactId>copy-rename-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptors>
+            <descriptor>sources.xml</descriptor>
+          </descriptors>
+        </configuration>
       </plugin>
     </plugins>
   </build>

@@ -18,6 +18,7 @@
 
   <properties>
     <jarFile>${ceylon.home}/repo/com/redhat/ceylon/typechecker/1.2.0/com.redhat.ceylon.typechecker-1.2.0.jar</jarFile>
+    <assemblyFile>${project.basedir}/../sources.xml</assemblyFile>
   </properties>
 
   <dependencies>
@@ -33,6 +34,9 @@
       <plugin>
         <groupId>com.coderplus.maven.plugins</groupId>
         <artifactId>copy-rename-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
       </plugin>
     </plugins>
   </build>

@@ -18,6 +18,7 @@
 
   <properties>
     <jarFile>${ceylon.home}/repo/com/redhat/ceylon/compiler/java/1.2.0/com.redhat.ceylon.compiler.java-1.2.0.jar</jarFile>
+    <assemblyFile>${project.basedir}/../sources.xml</assemblyFile>
   </properties>
 
   <dependencies>
@@ -36,21 +37,6 @@
       </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
-        <version>2.6</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>single</goal>
-            </goals>
-            <phase>package</phase>
-            <configuration>
-              <descriptors>
-                <descriptor>sources.xml</descriptor>
-              </descriptors>
-              <attach>true</attach>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
