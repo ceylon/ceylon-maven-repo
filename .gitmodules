@@ -1,0 +1,3 @@
+[submodule "projects/ceylon-compiler"]
+	path = projects/ceylon-compiler
+	url = https://github.com/ceylon/ceylon-compiler.git
