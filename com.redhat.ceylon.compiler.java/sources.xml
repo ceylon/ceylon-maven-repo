@@ -6,7 +6,7 @@
   </formats>
   <fileSets>
     <fileSet>
-      <directory>../projects/ceylon-compiler/src</directory>
+      <directory>project/src</directory>
     </fileSet>
   </fileSets>
 </assembly>
