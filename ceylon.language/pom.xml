@@ -18,7 +18,7 @@
 
   <properties>
     <jarFile>${ceylon.home}/repo/ceylon/language/1.2.0/ceylon.language-1.2.0.car</jarFile>
-    <sourceFile>${ceylon.home}/repo/ceylon/language/1.2.0/ceylon.language-1.2.0.src</sourceFile>
+    <sourcesFile>${ceylon.home}/repo/ceylon/language/1.2.0/ceylon.language-1.2.0.src</sourcesFile>
   </properties>
 
   <dependencies>

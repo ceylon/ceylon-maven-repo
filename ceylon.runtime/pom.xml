@@ -18,7 +18,7 @@
 
   <properties>
     <jarFile>${ceylon.home}/repo/ceylon/runtime/1.2.0/ceylon.runtime-1.2.0.jar</jarFile>
-    <assemblyFile>${project.basedir}/sources.xml</assemblyFile>
+    <sourcesDescriptor>${project.basedir}/sources.xml</sourcesDescriptor>
   </properties>
 
   <dependencies>
@@ -42,11 +42,6 @@
       </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
-        <configuration>
-          <descriptors>
-            <descriptor>sources.xml</descriptor>
-          </descriptors>
-        </configuration>
       </plugin>
     </plugins>
   </build>
