@@ -7,18 +7,17 @@
   <parent>
     <groupId>org.ceylon-lang</groupId>
     <artifactId>ceylon-parent</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.redhat.ceylon.typechecker</artifactId>
-  <version>1.2.0</version>
 
   <name>com.redhat.ceylon.typechecker</name>
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/typechecker/1.2.0/com.redhat.ceylon.typechecker-1.2.0.jar</jarFile>
-    <sourcesDescriptor>${project.basedir}/../sources.xml</sourcesDescriptor>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/typechecker/1.2.1/com.redhat.ceylon.typechecker-1.2.1.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/typechecker/1.2.1/com.redhat.ceylon.typechecker-1.2.1.src</sourcesFile>
   </properties>
 
   <dependencies>
@@ -36,7 +35,8 @@
         <artifactId>copy-rename-maven-plugin</artifactId>
       </plugin>
       <plugin>
-        <artifactId>maven-assembly-plugin</artifactId>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>

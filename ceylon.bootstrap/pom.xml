@@ -7,17 +7,16 @@
   <parent>
     <groupId>org.ceylon-lang</groupId>
     <artifactId>ceylon-parent</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>ceylon.bootstrap</artifactId>
-  <version>1.2.0</version>
 
   <name>ceylon.bootstrap</name>
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/ceylon/bootstrap/1.2.0/ceylon.bootstrap-1.2.0.jar</jarFile>
+    <jarFile>${ceylon.home}/repo/ceylon/bootstrap/1.2.1/ceylon.bootstrap-1.2.1.jar</jarFile>
     <sourcesDescriptor>${project.basedir}/../no-sources.xml</sourcesDescriptor>
   </properties>
 

@@ -12,13 +12,13 @@
 
   <groupId>org.ceylon-lang</groupId>
   <artifactId>ceylon-parent</artifactId>
-  <version>1.2.0</version>
+  <version>1.2.1-SNAPSHOT</version>
 
   <name>Ceylon lang - Parent</name>
   <packaging>pom</packaging>
 
   <properties>
-    <ceylon.home>/Users/julien/java/ceylon/ceylon-1.2.0</ceylon.home>
+    <ceylon.home>/Users/julien/Downloads/ceylon-1.2.1</ceylon.home>
     <sourcesSkip>false</sourcesSkip>
   </properties>
 
@@ -29,6 +29,8 @@
     <module>com.redhat.ceylon.model</module>
     <module>com.redhat.ceylon.module-resolver</module>
     <module>com.redhat.ceylon.typechecker</module>
+    <module>com.redhat.ceylon.langtools.classfile</module>
+    <module>com.redhat.ceylon.tool.provider</module>
     <module>ceylon.bootstrap</module>
     <module>ceylon.language</module>
     <module>ceylon.runtime</module>

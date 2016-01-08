@@ -7,18 +7,17 @@
   <parent>
     <groupId>org.ceylon-lang</groupId>
     <artifactId>ceylon-parent</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>ceylon.language</artifactId>
-  <version>1.2.0</version>
 
   <name>ceylon.language</name>
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/ceylon/language/1.2.0/ceylon.language-1.2.0.car</jarFile>
-    <sourcesFile>${ceylon.home}/repo/ceylon/language/1.2.0/ceylon.language-1.2.0.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/ceylon/language/1.2.1/ceylon.language-1.2.1.car</jarFile>
+    <sourcesFile>${ceylon.home}/repo/ceylon/language/1.2.1/ceylon.language-1.2.1.src</sourcesFile>
   </properties>
 
   <dependencies>
