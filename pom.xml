@@ -12,13 +12,13 @@
 
   <groupId>org.ceylon-lang</groupId>
   <artifactId>ceylon-parent</artifactId>
-  <version>1.2.1-SNAPSHOT</version>
+  <version>1.2.2-SNAPSHOT</version>
 
   <name>Ceylon lang - Parent</name>
   <packaging>pom</packaging>
 
   <properties>
-    <ceylon.home>/Users/julien/Downloads/ceylon-1.2.1</ceylon.home>
+    <ceylon.home>/Users/julien/Downloads/ceylon-1.2.2</ceylon.home>
     <sourcesSkip>false</sourcesSkip>
   </properties>
 
@@ -45,6 +45,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <executions>
+          <execution>
           <execution>
             <id>empty-javadoc-jar</id>
             <phase>package</phase>
