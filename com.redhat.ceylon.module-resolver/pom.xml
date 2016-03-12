@@ -16,35 +16,35 @@
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/1.2.2/com.redhat.ceylon.module-resolver-1.2.2.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/1.2.2/com.redhat.ceylon.module-resolver-1.2.2.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/${ceylon.version}/com.redhat.ceylon.module-resolver-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/${ceylon.version}/com.redhat.ceylon.module-resolver-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.jboss.modules</groupId>
       <artifactId>jboss-modules</artifactId>
-      <version>1.4.4.Final</version>
+      <version>${org.jboss.modules}</version>
     </dependency>
     <dependency>
       <groupId>org.jboss</groupId>
       <artifactId>jandex</artifactId>
-      <version>2.0.0.Final</version>
+      <version>${org.jboss.jandex}</version>
     </dependency>
     <dependency>
       <groupId>com.github.lookfirst</groupId>
       <artifactId>sardine</artifactId>
-      <version>5.1</version>
+      <version>${com.github.lookfirst.sardine}</version>
     </dependency>
     <dependency>
       <groupId>net.minidev</groupId>
       <artifactId>json-smart</artifactId>
-      <version>1.1.1</version>
+      <version>${net.minidev.json-smart}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
-      <version>4.3.2</version>
+      <version>${org.apache.httpcomponents.httpclient}</version>
     </dependency>
   </dependencies>
 

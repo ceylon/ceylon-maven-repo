@@ -16,15 +16,15 @@
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/tool/provider/1.2.2/com.redhat.ceylon.tool.provider-1.2.2.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/tool/provider/1.2.2/com.redhat.ceylon.tool.provider-1.2.2.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/tool/provider/${ceylon.version}/com.redhat.ceylon.tool.provider-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/tool/provider/${ceylon.version}/com.redhat.ceylon.tool.provider-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>com.github.rjeschke</groupId>
       <artifactId>txtmark</artifactId>
-      <version>0.13</version>
+      <version>${com.github.lookfirst.rjeschke.txtmark}</version>
     </dependency>
   </dependencies>
 

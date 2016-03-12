@@ -16,20 +16,20 @@
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/ceylon/runtime/1.2.2/ceylon.runtime-1.2.2.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/ceylon/runtime/1.2.2/ceylon.runtime-1.2.2.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/ceylon/runtime/${ceylon.version}/ceylon.runtime-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/ceylon/runtime/${ceylon.version}/ceylon.runtime-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.jboss.modules</groupId>
       <artifactId>jboss-modules</artifactId>
-      <version>1.4.4.Final</version>
+      <version>${org.jboss.modules}</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.logmanager</groupId>
       <artifactId>jboss-logmanager</artifactId>
-      <version>2.0.3.Final</version>
+      <version>${org.jboss.logmanager}</version>
     </dependency>
   </dependencies>
 

@@ -16,15 +16,15 @@
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/typechecker/1.2.2/com.redhat.ceylon.typechecker-1.2.2.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/typechecker/1.2.2/com.redhat.ceylon.typechecker-1.2.2.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/typechecker/${ceylon.version}/com.redhat.ceylon.typechecker-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/typechecker/${ceylon.version}/com.redhat.ceylon.typechecker-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.antlr</groupId>
       <artifactId>antlr-runtime</artifactId>
-      <version>3.4</version>
+      <version>${org.antlr.runtime}</version>
     </dependency>
   </dependencies>
 

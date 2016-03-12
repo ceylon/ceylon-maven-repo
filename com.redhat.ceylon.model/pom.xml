@@ -16,8 +16,8 @@
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/model/1.2.2/com.redhat.ceylon.model-1.2.2.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/model/1.2.2/com.redhat.ceylon.model-1.2.2.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/model/${ceylon.version}/com.redhat.ceylon.model-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/model/${ceylon.version}/com.redhat.ceylon.model-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <build>

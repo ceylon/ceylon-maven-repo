@@ -16,15 +16,15 @@
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/common/1.2.2/com.redhat.ceylon.common-1.2.2.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/common/1.2.2/com.redhat.ceylon.common-1.2.2.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/common/${ceylon.version}/com.redhat.ceylon.common-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/common/${ceylon.version}/com.redhat.ceylon.common-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.tautua.markdownpapers</groupId>
       <artifactId>markdownpapers-core</artifactId>
-      <version>1.2.7</version>
+      <version>${org.tautua.markdownpapers.core}</version>
     </dependency>
   </dependencies>
 
