@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -12,7 +10,7 @@
 
   <groupId>org.ceylon-lang</groupId>
   <artifactId>ceylon-parent</artifactId>
-  <version>1.2.2-SNAPSHOT</version>
+  <version>1.2.2</version>
 
   <name>Ceylon lang - Parent</name>
   <packaging>pom</packaging>
@@ -71,62 +69,62 @@
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.common</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.compiler.java</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.maven-support</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.model</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.module-resolver</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.typechecker</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>ceylon.language</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>ceylon.runtime</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>ceylon.bootstrap</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.langtools.classfile</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.tool.provider</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>ceylon-all</artifactId>
-        <version>1.2.2-SNAPSHOT</version>
+        <version>1.2.2</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
