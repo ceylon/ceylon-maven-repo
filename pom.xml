@@ -23,8 +23,8 @@
 
   <properties>
 
-    <ceylon.version>1.2.2</ceylon.version>
-    <ceylon.home>/Users/julien/Downloads/ceylon-1.2.2</ceylon.home>
+    <ceylon.version>1.2.3</ceylon.version>
+    <ceylon.home>/home/ceylon/ceylon/ceylon/dist/dist</ceylon.home>
     <sourcesSkip>false</sourcesSkip>
 
     <!-- versions -->
@@ -50,7 +50,6 @@
   <modules>
     <module>com.redhat.ceylon.common</module>
     <module>com.redhat.ceylon.compiler.java</module>
-    <module>com.redhat.ceylon.maven-support</module>
     <module>com.redhat.ceylon.model</module>
     <module>com.redhat.ceylon.module-resolver</module>
     <module>com.redhat.ceylon.typechecker</module>
@@ -74,11 +73,6 @@
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.compiler.java</artifactId>
-        <version>1.2.3-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.maven-support</artifactId>
         <version>1.2.3-SNAPSHOT</version>
       </dependency>
       <dependency>

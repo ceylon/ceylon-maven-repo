@@ -24,10 +24,6 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.maven-support</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.model</artifactId>
     </dependency>
     <dependency>
