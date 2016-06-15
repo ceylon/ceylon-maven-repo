@@ -20,15 +20,13 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.jboss.modules</groupId>
-      <artifactId>jboss-modules</artifactId>
-      <version>${org.jboss.modules}</version>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.common</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.jboss</groupId>
-      <artifactId>jandex</artifactId>
-      <version>${org.jboss.jandex}</version>
-    </dependency>
+    <!--dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.model</artifactId>
+    </dependency-->
   </dependencies>
 
   <build>

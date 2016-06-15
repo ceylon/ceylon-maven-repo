@@ -8,17 +8,22 @@
     <version>1.2.3-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.redhat.ceylon.common</artifactId>
+  <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
 
-  <name>com.redhat.ceylon.common</name>
+  <name>com.redhat.ceylon.module-resolver-javascript</name>
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/common/${ceylon.version}/com.redhat.ceylon.common-${ceylon.version}.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/common/${ceylon.version}/com.redhat.ceylon.common-${ceylon.version}.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver-javascript/${ceylon.version}/com.redhat.ceylon.module-resolver-javascript-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver-javascript/${ceylon.version}/com.redhat.ceylon.module-resolver-javascript-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>net.minidev</groupId>
+      <artifactId>json-smart</artifactId>
+      <version>${net.minidev.json-smart}</version>
+    </dependency>
   </dependencies>
 
   <build>

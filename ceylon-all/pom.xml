@@ -15,6 +15,10 @@
   <dependencies>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.cli</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.common</artifactId>
     </dependency>
     <dependency>
@@ -23,7 +27,27 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.compiler.js</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.model</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.module-loader</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.module-resolver-aether</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>

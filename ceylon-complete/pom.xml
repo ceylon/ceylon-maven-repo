@@ -46,8 +46,18 @@
                   <include>org.apache.httpcomponents:httpcore</include>
                   <include>org.apache.httpcomponents:httpclient</include>
                   <include>org.jboss.modules:jboss-modules</include>
-                  <include>org.jboss:jandex</include>
                   <include>org.tautua.markdownpapers:markdownpapers-core</include>
+                  <include>org.eclipse.aether:aether-api</include>
+                  <include>org.eclipse.aether:aether-spi</include>
+                  <include>org.eclipse.aether:aether-impl</include>
+                  <include>org.eclipse.aether:aether-util</include>
+                  <include>org.eclipse.aether:aether-connector-basic</include>
+                  <include>org.eclipse.aether:aether-transport-http</include>
+                  <include>org.eclipse.aether:aether-transport-file</include>
+                  <include>org.apache.maven:maven-aether-provider</include>
+                  <include>org.apache.maven:maven-setting</include>
+                  <include>org.apache.maven:maven-settings-builder</include>
+                  <include>org.codehaus.plexus:plexus-utils</include>
                 </includes>
               </artifactSet>
             </configuration>

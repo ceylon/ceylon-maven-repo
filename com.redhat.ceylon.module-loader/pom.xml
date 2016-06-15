@@ -8,17 +8,21 @@
     <version>1.2.3-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.redhat.ceylon.module-resolver</artifactId>
+  <artifactId>com.redhat.ceylon.module-loader</artifactId>
 
-  <name>com.redhat.ceylon.module-resolver</name>
+  <name>com.redhat.ceylon.module-loader</name>
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/${ceylon.version}/com.redhat.ceylon.module-resolver-${ceylon.version}.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/${ceylon.version}/com.redhat.ceylon.module-resolver-${ceylon.version}.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-loader/${ceylon.version}/com.redhat.ceylon.module-loader-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/module-loader/${ceylon.version}/com.redhat.ceylon.module-loader-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>ceylon.language</artifactId>
+    </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.common</artifactId>
@@ -29,19 +33,12 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.langtools.classfile</artifactId>
+      <artifactId>com.redhat.ceylon.module-resolver</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-aether</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
+      <groupId>org.jboss.modules</groupId>
+      <artifactId>jboss-modules</artifactId>
+      <version>${org.jboss.modules}</version>
     </dependency>
   </dependencies>
 

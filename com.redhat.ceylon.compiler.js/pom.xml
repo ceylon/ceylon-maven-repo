@@ -8,20 +8,28 @@
     <version>1.2.3-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.redhat.ceylon.module-resolver</artifactId>
+  <artifactId>com.redhat.ceylon.compiler.js</artifactId>
 
-  <name>com.redhat.ceylon.module-resolver</name>
+  <name>com.redhat.ceylon.compiler.js</name>
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/${ceylon.version}/com.redhat.ceylon.module-resolver-${ceylon.version}.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/${ceylon.version}/com.redhat.ceylon.module-resolver-${ceylon.version}.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/compiler/js/${ceylon.version}/com.redhat.ceylon.compiler.js-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/compiler/js/${ceylon.version}/com.redhat.ceylon.compiler.js-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
+      <artifactId>ceylon.language</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.common</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.cli</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
@@ -29,19 +37,25 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.langtools.classfile</artifactId>
+      <artifactId>com.redhat.ceylon.typechecker</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-aether</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
+      <artifactId>com.redhat.ceylon.module-resolver</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>net.minidev</groupId>
+      <artifactId>json-smart</artifactId>
+      <version>${net.minidev.json-smart}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr-runtime</artifactId>
+      <version>${org.antlr.runtime}</version>
     </dependency>
   </dependencies>
 

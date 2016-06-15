@@ -38,19 +38,27 @@
     <org.apache.commons.logging>1.1.1</org.apache.commons.logging>
     <org.apache.httpcomponents.httpclient>4.3.2</org.apache.httpcomponents.httpclient>
     <org.apache.httpcomponents.httpcore>4.3.2</org.apache.httpcomponents.httpcore>
-    <org.jboss.jandex>2.0.0.Final</org.jboss.jandex>
     <org.jboss.logmanager>2.0.3.Final</org.jboss.logmanager>
     <org.jboss.modules>1.4.4.Final</org.jboss.modules>
     <org.slf4j.api>1.6.1</org.slf4j.api>
     <org.slf4j.simple>1.6.1</org.slf4j.simple>
     <org.tautua.markdownpapers.core>1.2.7</org.tautua.markdownpapers.core>
+    <org.eclipse.aether>1.1.0</org.eclipse.aether>
+    <org.apache.maven>3.3.9</org.apache.maven>
+    <org.codehaus.plexus.plexus-utils>3.0.22</org.codehaus.plexus.plexus-utils>
 
   </properties>
 
   <modules>
+    <module>com.redhat.ceylon.cli</module>
     <module>com.redhat.ceylon.common</module>
     <module>com.redhat.ceylon.compiler.java</module>
+    <module>com.redhat.ceylon.compiler.js</module>
     <module>com.redhat.ceylon.model</module>
+    <module>com.redhat.ceylon.module-loader</module>
+    <module>com.redhat.ceylon.module-resolver-aether</module>
+    <module>com.redhat.ceylon.module-resolver-javascript</module>
+    <module>com.redhat.ceylon.module-resolver-webdav</module>
     <module>com.redhat.ceylon.module-resolver</module>
     <module>com.redhat.ceylon.typechecker</module>
     <module>com.redhat.ceylon.langtools.classfile</module>
@@ -67,6 +75,11 @@
     <dependencies>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.cli</artifactId>
+        <version>1.2.3-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.common</artifactId>
         <version>1.2.3-SNAPSHOT</version>
       </dependency>
@@ -77,7 +90,32 @@
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.compiler.js</artifactId>
+        <version>1.2.3-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.model</artifactId>
+        <version>1.2.3-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.module-loader</artifactId>
+        <version>1.2.3-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.module-resolver-aether</artifactId>
+        <version>1.2.3-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
+        <version>1.2.3-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
         <version>1.2.3-SNAPSHOT</version>
       </dependency>
       <dependency>

@@ -8,14 +8,14 @@
     <version>1.2.3-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.redhat.ceylon.module-resolver</artifactId>
+  <artifactId>com.redhat.ceylon.cli</artifactId>
 
-  <name>com.redhat.ceylon.module-resolver</name>
+  <name>com.redhat.ceylon.cli</name>
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/${ceylon.version}/com.redhat.ceylon.module-resolver-${ceylon.version}.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/${ceylon.version}/com.redhat.ceylon.module-resolver-${ceylon.version}.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/cli/${ceylon.version}/com.redhat.ceylon.cli-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/cli/${ceylon.version}/com.redhat.ceylon.cli-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
@@ -25,23 +25,12 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.model</artifactId>
+      <artifactId>com.redhat.ceylon.module-resolver</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.langtools.classfile</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-aether</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
+      <groupId>org.tautua.markdownpapers</groupId>
+      <artifactId>markdownpapers-core</artifactId>
+      <version>${org.tautua.markdownpapers.core}</version>
     </dependency>
   </dependencies>
 

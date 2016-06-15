@@ -8,28 +8,31 @@
     <version>1.2.3-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.redhat.ceylon.model</artifactId>
+  <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
 
-  <name>com.redhat.ceylon.model</name>
+  <name>com.redhat.ceylon.module-resolver-webdav</name>
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/model/${ceylon.version}/com.redhat.ceylon.model-${ceylon.version}.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/model/${ceylon.version}/com.redhat.ceylon.model-${ceylon.version}.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver-webdav/${ceylon.version}/com.redhat.ceylon.module-resolver-webdav-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver-webdav/${ceylon.version}/com.redhat.ceylon.module-resolver-webdav-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>ceylon.language</artifactId>
+      <groupId>com.github.lookfirst</groupId>
+      <artifactId>sardine</artifactId>
+      <version>${com.github.lookfirst.sardine}</version>
     </dependency>
     <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.common</artifactId>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>${org.apache.httpcomponents.httpclient}</version>
     </dependency>
     <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.langtools.classfile</artifactId>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpcore</artifactId>
+      <version>${org.apache.httpcomponents.httpcore}</version>
     </dependency>
   </dependencies>
 
