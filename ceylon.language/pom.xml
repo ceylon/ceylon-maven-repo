@@ -23,10 +23,10 @@
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.common</artifactId>
     </dependency>
-    <!--dependency>
+    <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.model</artifactId>
-    </dependency-->
+    </dependency>
   </dependencies>
 
   <build>
