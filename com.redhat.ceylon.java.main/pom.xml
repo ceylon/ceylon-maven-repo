@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.ceylon-lang</groupId>
     <artifactId>ceylon-parent</artifactId>
-    <version>1.2.3-SNAPSHOT</version>
+    <version>1.3.0</version>
   </parent>
 
   <artifactId>com.redhat.ceylon.java.main</artifactId>
@@ -21,11 +21,15 @@
   <dependencies>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>ceylon.language</artifactId>
+      <artifactId>com.redhat.ceylon.common</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.common</artifactId>
+      <artifactId>com.redhat.ceylon.langtools.classfile</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.model</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
@@ -33,7 +37,7 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.langtools.classfile</artifactId>
+      <artifactId>ceylon.language</artifactId>
     </dependency>
   </dependencies>
 
