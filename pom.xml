@@ -10,7 +10,7 @@
 
   <groupId>org.ceylon-lang</groupId>
   <artifactId>ceylon-parent</artifactId>
-  <version>1.3.0</version>
+  <version>1.3.1</version>
 
   <name>Ceylon lang - Parent</name>
   <packaging>pom</packaging>
@@ -23,8 +23,8 @@
 
   <properties>
 
-    <ceylon.version>1.3.0</ceylon.version>
-    <ceylon.home>/home/ceylon/ceylon/ceylon/dist/dist</ceylon.home>
+    <ceylon.version>1.3.1</ceylon.version>
+    <ceylon.home>${user.home}/.sdkman/candidates/ceylon/1.3.1</ceylon.home>
     <sourcesSkip>false</sourcesSkip>
 
     <!-- versions -->
@@ -77,92 +77,92 @@
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.cli</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.common</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.compiler.java</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.compiler.js</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.java.main</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.model</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.module-loader</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.module-resolver-aether</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.module-resolver</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.typechecker</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>ceylon.language</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>ceylon.runtime</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>ceylon.bootstrap</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.langtools.classfile</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.tool.provider</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>ceylon-all</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
