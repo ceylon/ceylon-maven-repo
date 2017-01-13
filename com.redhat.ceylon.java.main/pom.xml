@@ -14,11 +14,15 @@
   <packaging>jar</packaging>
 
   <properties>
-      <jarFile>${ceylon.home}/repo/com/redhat/ceylon/java/main/${ceylon.version}/com.redhat.ceylon.java.main-${ceylon.version}.jar</jarFile>
-      <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/java/main/${ceylon.version}/com.redhat.ceylon.java.main-${ceylon.version}.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/java/main/${ceylon.version}/com.redhat.ceylon.java.main-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/java/main/${ceylon.version}/com.redhat.ceylon.java.main-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>ceylon.language</artifactId>
+    </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.common</artifactId>
@@ -34,10 +38,6 @@
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.module-resolver</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>ceylon.language</artifactId>
     </dependency>
   </dependencies>
 

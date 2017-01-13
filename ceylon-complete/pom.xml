@@ -35,29 +35,29 @@
               <artifactSet>
                 <includes>
                   <include>org.ceylon-lang:*</include>
+                  <include>antlr:antlr</include>
                   <include>com.github.lookfirst:sardine</include>
                   <include>com.github.rjeschke:txtmark</include>
-                  <include>net.minidev:json-smart</include>
-                  <include>antlr:antlr</include>
-                  <include>org.antlr:antlr-runtime</include>
-                  <include>org.antlr:stringtemplate</include>
                   <include>commons-codec:commons-codec</include>
                   <include>commons-logging:commons-logging</include>
-                  <include>org.apache.httpcomponents:httpcore</include>
+                  <include>net.minidev:json-smart</include>
+                  <include>org.antlr:antlr-runtime</include>
+                  <include>org.antlr:stringtemplate</include>
                   <include>org.apache.httpcomponents:httpclient</include>
-                  <include>org.jboss.modules:jboss-modules</include>
-                  <include>org.tautua.markdownpapers:markdownpapers-core</include>
-                  <include>org.eclipse.aether:aether-api</include>
-                  <include>org.eclipse.aether:aether-spi</include>
-                  <include>org.eclipse.aether:aether-impl</include>
-                  <include>org.eclipse.aether:aether-util</include>
-                  <include>org.eclipse.aether:aether-connector-basic</include>
-                  <include>org.eclipse.aether:aether-transport-http</include>
-                  <include>org.eclipse.aether:aether-transport-file</include>
+                  <include>org.apache.httpcomponents:httpcore</include>
                   <include>org.apache.maven:maven-aether-provider</include>
                   <include>org.apache.maven:maven-setting</include>
                   <include>org.apache.maven:maven-settings-builder</include>
                   <include>org.codehaus.plexus:plexus-utils</include>
+                  <include>org.eclipse.aether:aether-api</include>
+                  <include>org.eclipse.aether:aether-connector-basic</include>
+                  <include>org.eclipse.aether:aether-impl</include>
+                  <include>org.eclipse.aether:aether-spi</include>
+                  <include>org.eclipse.aether:aether-transport-file</include>
+                  <include>org.eclipse.aether:aether-transport-http</include>
+                  <include>org.eclipse.aether:aether-util</include>
+                  <include>org.jboss.modules:jboss-modules</include>
+                  <include>org.tautua.markdownpapers:markdownpapers-core</include>
                 </includes>
               </artifactSet>
             </configuration>

@@ -37,11 +37,11 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
+      <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
+      <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
     </dependency>
   </dependencies>
 

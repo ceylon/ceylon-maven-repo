@@ -16,23 +16,7 @@
   <dependencies>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.common</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.compiler.java</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.model</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.typechecker</artifactId>
+      <artifactId>ceylon.bootstrap</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
@@ -44,7 +28,11 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>ceylon.bootstrap</artifactId>
+      <artifactId>com.redhat.ceylon.common</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.compiler.java</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
@@ -52,7 +40,19 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.model</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.module-resolver</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.tool.provider</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.typechecker</artifactId>
     </dependency>
   </dependencies>
 

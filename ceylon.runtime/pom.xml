@@ -21,6 +21,10 @@
   <dependencies>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
+      <artifactId>ceylon.language</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.cli</artifactId>
     </dependency>
     <dependency>
@@ -40,18 +44,14 @@
       <artifactId>com.redhat.ceylon.tool.provider</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>ceylon.language</artifactId>
+      <groupId>org.jboss.logmanager</groupId>
+      <artifactId>jboss-logmanager</artifactId>
+      <version>${org.jboss.logmanager}</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.modules</groupId>
       <artifactId>jboss-modules</artifactId>
       <version>${org.jboss.modules}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jboss.logmanager</groupId>
-      <artifactId>jboss-logmanager</artifactId>
-      <version>${org.jboss.logmanager}</version>
     </dependency>
   </dependencies>
 
