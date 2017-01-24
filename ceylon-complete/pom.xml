@@ -38,16 +38,24 @@
                   <include>antlr:antlr</include>
                   <include>com.github.lookfirst:sardine</include>
                   <include>com.github.rjeschke:txtmark</include>
+                  <include>com.google.guava:guava</include>
                   <include>commons-codec:commons-codec</include>
                   <include>commons-logging:commons-logging</include>
                   <include>net.minidev:json-smart</include>
                   <include>org.antlr:antlr-runtime</include>
                   <include>org.antlr:stringtemplate</include>
+                  <include>org.apache.commons:commons-lang3</include>
                   <include>org.apache.httpcomponents:httpclient</include>
                   <include>org.apache.httpcomponents:httpcore</include>
                   <include>org.apache.maven:maven-aether-provider</include>
-                  <include>org.apache.maven:maven-setting</include>
+                  <include>org.apache.maven:maven-artifact</include>
+                  <include>org.apache.maven:maven-builder-support</include>
+                  <include>org.apache.maven:maven-model</include>
+                  <include>org.apache.maven:maven-model-builder</include>
+                  <include>org.apache.maven:maven-repository-metadata</include>
+                  <include>org.apache.maven:maven-settings</include>
                   <include>org.apache.maven:maven-settings-builder</include>
+                  <include>org.codehaus.plexus:plexus-interpolation</include>
                   <include>org.codehaus.plexus:plexus-utils</include>
                   <include>org.eclipse.aether:aether-api</include>
                   <include>org.eclipse.aether:aether-connector-basic</include>
@@ -56,7 +64,10 @@
                   <include>org.eclipse.aether:aether-transport-file</include>
                   <include>org.eclipse.aether:aether-transport-http</include>
                   <include>org.eclipse.aether:aether-util</include>
+                  <include>org.jboss.logmanager:jboss-logmanager</include>
                   <include>org.jboss.modules:jboss-modules</include>
+                  <include>org.slf4j:slf4j-api</include>
+                  <include>org.slf4j:slf4j-simple</include>
                   <include>org.tautua.markdownpapers:markdownpapers-core</include>
                 </includes>
               </artifactSet>
@@ -66,5 +77,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>

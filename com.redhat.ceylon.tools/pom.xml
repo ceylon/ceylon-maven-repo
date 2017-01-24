@@ -8,43 +8,41 @@
     <version>1.3.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.redhat.ceylon.module-resolver</artifactId>
+  <artifactId>com.redhat.ceylon.tools</artifactId>
 
-  <name>com.redhat.ceylon.module-resolver</name>
+  <name>com.redhat.ceylon.tools</name>
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/${ceylon.version}/com.redhat.ceylon.module-resolver-${ceylon.version}.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver/${ceylon.version}/com.redhat.ceylon.module-resolver-${ceylon.version}.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/tools/${ceylon.version}/com.redhat.ceylon.tools-${ceylon.version}.jar</jarFile>
+    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/tools/${ceylon.version}/com.redhat.ceylon.tools-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>ceylon.bootstrap</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.cli</artifactId>
+    </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.common</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.langtools.classfile</artifactId>
+      <artifactId>com.redhat.ceylon.module-resolver</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.model</artifactId>
+      <artifactId>com.redhat.ceylon.typechecker</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-aether</artifactId>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
-      <optional>true</optional>
+      <groupId>com.github.rjeschke</groupId>
+      <artifactId>txtmark</artifactId>
+      <version>${com.github.rjeschke.txtmark}</version>
     </dependency>
   </dependencies>
 

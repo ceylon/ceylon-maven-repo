@@ -21,6 +21,10 @@
   <dependencies>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
+      <artifactId>ceylon.language</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.common</artifactId>
     </dependency>
     <dependency>
@@ -32,13 +36,10 @@
       <artifactId>com.redhat.ceylon.module-resolver</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>ceylon.language</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.jboss.modules</groupId>
       <artifactId>jboss-modules</artifactId>
       <version>${org.jboss.modules}</version>
+      <optional>true</optional>
     </dependency>
   </dependencies>
 
@@ -54,5 +55,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>

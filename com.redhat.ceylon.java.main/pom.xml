@@ -33,10 +33,6 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.model</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.module-resolver</artifactId>
     </dependency>
   </dependencies>
@@ -53,5 +49,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>

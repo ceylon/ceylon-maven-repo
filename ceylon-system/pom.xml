@@ -10,7 +10,8 @@
 
   <artifactId>ceylon-system</artifactId>
 
-  <name>system</name>
+  <name>ceylon-system</name>
+
   <packaging>pom</packaging>
 
   <dependencies>
@@ -28,11 +29,23 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.cli</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.common</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.compiler.java</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.compiler.js</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.java.main</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
@@ -44,7 +57,23 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.module-loader</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.module-resolver</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.module-resolver-aether</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
@@ -52,8 +81,11 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
+      <artifactId>com.redhat.ceylon.tools</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
       <artifactId>com.redhat.ceylon.typechecker</artifactId>
     </dependency>
   </dependencies>
-
 </project>
