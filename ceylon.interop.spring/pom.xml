@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.ceylon-lang</groupId>
+    <artifactId>ceylon-parent</artifactId>
+    <version>1.3.2-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>ceylon.interop.spring</artifactId>
+
+  <name>ceylon.interop.spring</name>
+  <packaging>jar</packaging>
+
+  <properties>
+    <jarFile>${ceylon.sdk}/ceylon/interop/spring/${ceylon.version}/ceylon.interop.spring-${ceylon.version}.car</jarFile>
+    <sourcesFile>${ceylon.sdk}/ceylon/interop/spring/${ceylon.version}/ceylon.interop.spring-${ceylon.version}.src</sourcesFile>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.ceylon-lang</groupId>
+      <artifactId>ceylon.language</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate.javax.persistence</groupId>
+      <artifactId>hibernate-jpa-2.1-api</artifactId>
+      <version>${org.hibernate.javax.persistence.hibernate-jpa-2.1-api}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>${org.springframework.spring-tx}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-commons</artifactId>
+      <version>${org.springframework.data.spring-data-commons}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>${org.springframework.data.spring-data-jpa}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.coderplus.maven.plugins</groupId>
+        <artifactId>copy-rename-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>

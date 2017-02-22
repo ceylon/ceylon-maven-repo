@@ -25,151 +25,346 @@
 
     <ceylon.version>1.3.2-SNAPSHOT</ceylon.version>
     <ceylon.home>${user.home}/.sdkman/candidates/ceylon/1.3.2-SNAPSHOT</ceylon.home>
+    <ceylon.sdk>${user.home}/.ceylon/repo</ceylon.sdk>
     <sourcesSkip>false</sourcesSkip>
 
-    <!-- versions -->
+    <!-- dist versions -->
     <com.github.lookfirst.sardine>5.1</com.github.lookfirst.sardine>
     <com.github.rjeschke.txtmark>0.13</com.github.rjeschke.txtmark>
     <net.minidev.json-smart>1.1.1</net.minidev.json-smart>
-    <org.antlr.antlr>2.7.7</org.antlr.antlr>
     <org.antlr.runtime>3.4</org.antlr.runtime>
-    <org.antlr.stringtemplate>3.2.1</org.antlr.stringtemplate>
-    <org.apache.commons.codec>1.8</org.apache.commons.codec>
-    <org.apache.commons.logging>1.1.1</org.apache.commons.logging>
     <org.apache.httpcomponents.httpclient>4.3.2</org.apache.httpcomponents.httpclient>
     <org.apache.httpcomponents.httpcore>4.3.2</org.apache.httpcomponents.httpcore>
-    <org.jboss.logmanager>2.0.3.Final</org.jboss.logmanager>
-    <org.jboss.modules>1.4.4.Final</org.jboss.modules>
-    <org.slf4j.api>1.6.1</org.slf4j.api>
-    <org.slf4j.simple>1.6.1</org.slf4j.simple>
-    <org.tautua.markdownpapers.core>1.2.7</org.tautua.markdownpapers.core>
-    <org.eclipse.aether>1.1.0</org.eclipse.aether>
     <org.apache.maven>3.3.9</org.apache.maven>
     <org.codehaus.plexus.plexus-utils>3.0.22</org.codehaus.plexus.plexus-utils>
+    <org.eclipse.aether>1.1.0</org.eclipse.aether>
+    <org.jboss.logmanager>2.0.3.Final</org.jboss.logmanager>
+    <org.jboss.modules>1.4.4.Final</org.jboss.modules>
+    <org.tautua.markdownpapers.core>1.2.7</org.tautua.markdownpapers.core>
 
+    <!-- sdk versions -->
+    <io.undertow.core>1.4.4.Final</io.undertow.core>
+    <org.hibernate.javax.persistence.hibernate-jpa-2.1-api>1.0.0.Final</org.hibernate.javax.persistence.hibernate-jpa-2.1-api>
+    <org.jboss.narayana.jta>5.2.7.Final</org.jboss.narayana.jta>
+    <org.jboss.xnio.nio>3.3.6.Final</org.jboss.xnio.nio>
+    <org.springframework.data.spring-data-commons>1.12.4.RELEASE</org.springframework.data.spring-data-commons>
+    <org.springframework.data.spring-data-jpa>1.10.4.RELEASE</org.springframework.data.spring-data-jpa>
+    <org.springframework.spring-tx>4.2.8.RELEASE</org.springframework.spring-tx>
+    
   </properties>
 
   <modules>
+    <!-- Distrib -->
+    <module>ceylon.bootstrap</module>
+    <module>ceylon.language</module>
+    <module>ceylon.runtime</module>
     <module>com.redhat.ceylon.cli</module>
     <module>com.redhat.ceylon.common</module>
     <module>com.redhat.ceylon.compiler.java</module>
     <module>com.redhat.ceylon.compiler.js</module>
     <module>com.redhat.ceylon.java.main</module>
+    <module>com.redhat.ceylon.langtools.classfile</module>
     <module>com.redhat.ceylon.model</module>
     <module>com.redhat.ceylon.module-loader</module>
+    <module>com.redhat.ceylon.module-resolver</module>
     <module>com.redhat.ceylon.module-resolver-aether</module>
     <module>com.redhat.ceylon.module-resolver-javascript</module>
     <module>com.redhat.ceylon.module-resolver-webdav</module>
-    <module>com.redhat.ceylon.module-resolver</module>
-    <module>com.redhat.ceylon.typechecker</module>
-    <module>com.redhat.ceylon.langtools.classfile</module>
     <module>com.redhat.ceylon.tool.provider</module>
     <module>com.redhat.ceylon.tools</module>
-    <module>ceylon.bootstrap</module>
-    <module>ceylon.language</module>
-    <module>ceylon.runtime</module>
-    <module>ceylon-system</module>
+    <module>com.redhat.ceylon.typechecker</module>
     <module>ceylon-all</module>
     <module>ceylon-complete</module>
+    <module>ceylon-system</module>
+    
+    <!-- SDK -->
+    <module>ceylon.buffer</module>
+    <module>ceylon.collection</module>
+    <module>ceylon.dbc</module>
+    <module>ceylon.decimal</module>
+    <module>ceylon.file</module>
+    <module>ceylon.html</module>
+    <module>ceylon.http.client</module>
+    <module>ceylon.http.common</module>
+    <module>ceylon.http.server</module>
+    <module>ceylon.interop.java</module>
+    <module>ceylon.interop.persistence</module>
+    <module>ceylon.interop.spring</module>
+    <module>ceylon.io</module>
+    <module>ceylon.json</module>
+    <module>ceylon.locale</module>
+    <module>ceylon.logging</module>
+    <module>ceylon.math</module>
+    <module>ceylon.numeric</module>
+    <module>ceylon.process</module>
+    <module>ceylon.promise</module>
+    <module>ceylon.random</module>
+    <module>ceylon.regex</module>
+    <module>ceylon.test</module>
+    <module>ceylon.time</module>
+    <module>ceylon.transaction</module>
+    <module>ceylon.unicode</module>
+    <module>ceylon.uri</module>
+    <module>ceylon.whole</module>
+    <module>ceylon-sdk</module>
   </modules>
 
   <dependencyManagement>
     <dependencies>
+      <!-- Distrib -->
       <dependency>
         <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.cli</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.common</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.compiler.java</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.compiler.js</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.java.main</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.model</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.module-loader</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.module-resolver-aether</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.module-resolver</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.ceylon-lang</groupId>
-        <artifactId>com.redhat.ceylon.typechecker</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
+        <artifactId>ceylon.bootstrap</artifactId>
+        <version>${ceylon.version}</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>ceylon.language</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
+        <version>${ceylon.version}</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>ceylon.runtime</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
+        <version>${ceylon.version}</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
-        <artifactId>ceylon.bootstrap</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
+        <artifactId>com.redhat.ceylon.cli</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.common</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.compiler.java</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.compiler.js</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.java.main</artifactId>
+        <version>${ceylon.version}</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.langtools.classfile</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.model</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.module-loader</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.module-resolver</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.module-resolver-aether</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.module-resolver-javascript</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.module-resolver-webdav</artifactId>
+        <version>${ceylon.version}</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.tool.provider</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
+        <version>${ceylon.version}</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>com.redhat.ceylon.tools</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>com.redhat.ceylon.typechecker</artifactId>
+        <version>${ceylon.version}</version>
       </dependency>
       <dependency>
         <groupId>org.ceylon-lang</groupId>
         <artifactId>ceylon-all</artifactId>
-        <version>1.3.2-SNAPSHOT</version>
+        <version>${ceylon.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon-complete</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon-system</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      
+      <!-- Distrib -->
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.buffer</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.collection</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.dbc</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.decimal</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.file</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.html</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.http.client</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.http.common</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.http.server</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.interop.java</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.interop.persistence</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.interop.spring</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.io</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.json</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.locale</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.logging</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.math</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.numeric</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.process</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.promise</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.random</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.regex</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.test</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.time</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.transaction</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.unicode</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.uri</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon.whole</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ceylon-lang</groupId>
+        <artifactId>ceylon-sdk</artifactId>
+        <version>${ceylon.version}</version>
+      </dependency>
+      
     </dependencies>
   </dependencyManagement>
 
