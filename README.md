@@ -5,7 +5,7 @@ This repository builds a Maven repository ready to be published locally, or to M
 It is mostly generated with:
 
 ```bash
-$ CEYLON_VERSION=1.3.2-SNAPSHOT
+$ CEYLON_VERSION=1.3.2
 $ ceylon maven-export --for-import \
  ceylon.language/$CEYLON_VERSION \
  com.redhat.ceylon.compiler.java/$CEYLON_VERSION \

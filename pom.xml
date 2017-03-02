@@ -10,7 +10,7 @@
 
   <groupId>org.ceylon-lang</groupId>
   <artifactId>ceylon-parent</artifactId>
-  <version>1.3.2-SNAPSHOT</version>
+  <version>1.3.2</version>
 
   <name>Ceylon lang - Parent</name>
   <packaging>pom</packaging>
@@ -23,8 +23,8 @@
 
   <properties>
 
-    <ceylon.version>1.3.2-SNAPSHOT</ceylon.version>
-    <ceylon.home>${user.home}/.sdkman/candidates/ceylon/1.3.2-SNAPSHOT</ceylon.home>
+    <ceylon.version>1.3.2</ceylon.version>
+    <ceylon.home>${user.home}/.sdkman/candidates/ceylon/1.3.2</ceylon.home>
     <ceylon.sdk>${user.home}/.ceylon/repo</ceylon.sdk>
     <sourcesSkip>false</sourcesSkip>
 
