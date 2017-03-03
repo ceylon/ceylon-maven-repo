@@ -53,3 +53,54 @@ $ rm -rf ceylon* com.*
 $ mv maven-repository/* .
 $ mv maven-sdk-repository/* .
 ```
+
+# Publishing to Maven Central
+
+Make sure you install a released Ceylon version locally.
+
+Now fetch the entire SDK:
+
+```
+$ CEYLON_VERSION=1.3.2
+$ ceylon copy --out sdk-repository --src --jvm \
+ ceylon.buffer/$CEYLON_VERSION \
+ ceylon.collection/$CEYLON_VERSION \
+ ceylon.dbc/$CEYLON_VERSION \
+ ceylon.decimal/$CEYLON_VERSION \
+ ceylon.file/$CEYLON_VERSION \
+ ceylon.html/$CEYLON_VERSION \
+ ceylon.http.client/$CEYLON_VERSION \
+ ceylon.http.common/$CEYLON_VERSION \
+ ceylon.http.server/$CEYLON_VERSION \
+ ceylon.interop.java/$CEYLON_VERSION \
+ ceylon.interop.persistence/$CEYLON_VERSION \
+ ceylon.interop.spring/$CEYLON_VERSION \
+ ceylon.io/$CEYLON_VERSION \
+ ceylon.json/$CEYLON_VERSION \
+ ceylon.locale/$CEYLON_VERSION \
+ ceylon.logging/$CEYLON_VERSION \
+ ceylon.math/$CEYLON_VERSION \
+ ceylon.numeric/$CEYLON_VERSION \
+ ceylon.process/$CEYLON_VERSION \
+ ceylon.promise/$CEYLON_VERSION \
+ ceylon.random/$CEYLON_VERSION \
+ ceylon.regex/$CEYLON_VERSION \
+ ceylon.time/$CEYLON_VERSION \
+ ceylon.transaction/$CEYLON_VERSION \
+ ceylon.unicode/$CEYLON_VERSION \
+ ceylon.uri/$CEYLON_VERSION \
+ ceylon.test/$CEYLON_VERSION \
+ ceylon.whole/$CEYLON_VERSION
+```
+
+Test locally
+
+```
+$ mvn -Dceylon.home=/usr/share/ceylon/$CEYLON_VERSION -Dceylon.sdk=$PWD/sdk-repository install
+```
+
+Now if you have your credentials configured for Maven Central, try:
+
+```
+$ mvn -Dceylon.home=/usr/share/ceylon/1.3.2 -Dceylon.sdk=$PWD/sdk-repository deploy -Psonatype-oss-release
+```
