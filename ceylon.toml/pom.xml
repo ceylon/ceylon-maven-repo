@@ -8,14 +8,14 @@
     <version>1.3.3</version>
   </parent>
 
-  <artifactId>com.redhat.ceylon.module-loader</artifactId>
+  <artifactId>ceylon.toml</artifactId>
 
-  <name>com.redhat.ceylon.module-loader</name>
+  <name>ceylon.toml</name>
   <packaging>jar</packaging>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-loader/${ceylon.version}/com.redhat.ceylon.module-loader-${ceylon.version}.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/module-loader/${ceylon.version}/com.redhat.ceylon.module-loader-${ceylon.version}.src</sourcesFile>
+    <jarFile>${ceylon.sdk}/ceylon/toml/${ceylon.version}/ceylon.toml-${ceylon.version}.car</jarFile>
+    <sourcesFile>${ceylon.sdk}/ceylon/toml/${ceylon.version}/ceylon.toml-${ceylon.version}.src</sourcesFile>
   </properties>
 
   <dependencies>
@@ -25,21 +25,11 @@
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.common</artifactId>
+      <artifactId>ceylon.time</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.model</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.module-resolver</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.jboss.modules</groupId>
-      <artifactId>jboss-modules</artifactId>
-      <version>${org.jboss.modules}</version>
-      <optional>true</optional>
+      <artifactId>ceylon.collection</artifactId>
     </dependency>
   </dependencies>
 

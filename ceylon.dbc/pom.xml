@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.ceylon-lang</groupId>
     <artifactId>ceylon-parent</artifactId>
-    <version>1.3.2</version>
+    <version>1.3.3</version>
   </parent>
 
   <artifactId>ceylon.dbc</artifactId>
@@ -26,10 +26,6 @@
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>ceylon.decimal</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>ceylon.interop.java</artifactId>
     </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>

@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.ceylon-lang</groupId>
     <artifactId>ceylon-parent</artifactId>
-    <version>1.3.2</version>
+    <version>1.3.3</version>
   </parent>
 
   <artifactId>ceylon.whole</artifactId>
@@ -19,10 +19,6 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>ceylon.interop.java</artifactId>
-    </dependency>
     <dependency>
       <groupId>org.ceylon-lang</groupId>
       <artifactId>ceylon.language</artifactId>

@@ -5,7 +5,7 @@ This repository builds a Maven repository ready to be published locally, or to M
 It is mostly generated with:
 
 ```bash
-$ CEYLON_VERSION=1.3.2
+$ CEYLON_VERSION=1.3.3
 $ ceylon maven-export --for-import \
  ceylon.language/$CEYLON_VERSION \
  com.redhat.ceylon.compiler.java/$CEYLON_VERSION \
@@ -38,6 +38,7 @@ $ ceylon maven-export --out maven-sdk-repository --for-sdk-import \
  ceylon.random/$CEYLON_VERSION \
  ceylon.regex/$CEYLON_VERSION \
  ceylon.time/$CEYLON_VERSION \
+ ceylon.toml/$CEYLON_VERSION \
  ceylon.transaction/$CEYLON_VERSION \
  ceylon.unicode/$CEYLON_VERSION \
  ceylon.uri/$CEYLON_VERSION \
@@ -61,7 +62,7 @@ Make sure you install a released Ceylon version locally.
 Now fetch the entire SDK:
 
 ```
-$ CEYLON_VERSION=1.3.2
+$ CEYLON_VERSION=1.3.3
 $ ceylon copy --out sdk-repository --src --jvm \
  ceylon.buffer/$CEYLON_VERSION \
  ceylon.collection/$CEYLON_VERSION \
@@ -86,6 +87,7 @@ $ ceylon copy --out sdk-repository --src --jvm \
  ceylon.random/$CEYLON_VERSION \
  ceylon.regex/$CEYLON_VERSION \
  ceylon.time/$CEYLON_VERSION \
+ ceylon.toml/$CEYLON_VERSION \
  ceylon.transaction/$CEYLON_VERSION \
  ceylon.unicode/$CEYLON_VERSION \
  ceylon.uri/$CEYLON_VERSION \
@@ -102,5 +104,5 @@ $ mvn -Dceylon.home=/usr/share/ceylon/$CEYLON_VERSION -Dceylon.sdk=$PWD/sdk-repo
 Now if you have your credentials configured for Maven Central, try:
 
 ```
-$ mvn -Dceylon.home=/usr/share/ceylon/1.3.2 -Dceylon.sdk=$PWD/sdk-repository deploy -Psonatype-oss-release
+$ mvn -Dceylon.home=/usr/share/ceylon/1.3.3 -Dceylon.sdk=$PWD/sdk-repository deploy -Psonatype-oss-release
 ```

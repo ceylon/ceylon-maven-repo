@@ -8,22 +8,18 @@
     <version>1.3.3</version>
   </parent>
 
-  <artifactId>com.redhat.ceylon.module-resolver-aether</artifactId>
+  <artifactId>com.redhat.ceylon.aether</artifactId>
 
-  <name>com.redhat.ceylon.module-resolver-aether</name>
+  <name>com.redhat.ceylon.aether</name>
   <packaging>jar</packaging>
+  <version>3.3.9</version>
 
   <properties>
-    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver-aether/${ceylon.version}/com.redhat.ceylon.module-resolver-aether-${ceylon.version}.jar</jarFile>
-    <sourcesFile>${ceylon.home}/repo/com/redhat/ceylon/module-resolver-aether/${ceylon.version}/com.redhat.ceylon.module-resolver-aether-${ceylon.version}.src</sourcesFile>
+    <jarFile>${ceylon.home}/repo/com/redhat/ceylon/aether/${com.redhat.ceylon.aether}/com.redhat.ceylon.aether-${com.redhat.ceylon.aether}.jar</jarFile>
+    <sourcesDescriptor>${project.basedir}/../no-sources.xml</sourcesDescriptor>
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>org.ceylon-lang</groupId>
-      <artifactId>com.redhat.ceylon.aether</artifactId>
-      <version>${com.redhat.ceylon.aether}</version>
-    </dependency>
   </dependencies>
 
   <build>
@@ -33,8 +29,7 @@
         <artifactId>copy-rename-maven-plugin</artifactId>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
+        <artifactId>maven-assembly-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
